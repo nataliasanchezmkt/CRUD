@@ -1,70 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
- body{
-  background-image: url(/img/wp7110875-rick-and-morty-aesthetic-ps4-wallpapers-1.jpg);
-  background-size: cover;
-    
+#logo{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
 }
 
-
-p{
-
-    font-family: 'Press Start 2P', cursive;  
-    font-size: 2em;
-    letter-spacing: 2px;
-    color: #ffffff;
-}
-
-/* efecto neon en los textos */
-
-.verde{
-    text-shadow: 0 0 5px #71b65c, 0 0 10px #71b65c, 
-    0 0 20px  #71b65c,0 0 30px #71b65c,0 0 40px #71b65c,
-    0 0 60px #71b65c,0 0 100px #71b65c;
-}
-.azul{
-    text-shadow: 0 0 5px#2b5096, 0 0 10px#2b5096, 
-    0 0 20px #2b5096,0 0 30px#2b5096,0 0 40px#2b5096,
-    0 0 60px#2b5096,0 0 100px#2b5096;
-}
-
-.violeta{
-    text-shadow: 0 0 5px#782b96, 0 0 10px#782b96, 
-    0 0 20px #782b96,0 0 30px#782b96,0 0 40px#782b96,
-    0 0 60px#782b96,0 0 100px#782b96;
-}
-/* estilo para botones */
-
-.btn-verde{
-    background:#71b65c ;
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
-  
-}
-.btn-azul{
-    background:#2b5096 ;
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
-}
-.btn-violeta{
-    background:#782b96 ;
-    font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
-}
-
-@media all and (max-width:992px) {
-   body{
-       background-color: black;
-       background-image: none;
-      
-
-     
-   }
-
- 
+h1,h2{
+    font-family: 'Lobster Two', cursive;
 
 }
-
-

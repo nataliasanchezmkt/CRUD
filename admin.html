@@ -9,9 +9,169 @@
     <title>CRUD</title>
 </head>
 <body>
-    <main>
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html" id="logo">Practica CRUD</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                  <li class="nav-item ">
+                    <a class="nav-link  " href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active justify-content-end"  aria-current="page" href="admin.html">Administracion</a>
+                  </li>
+                 
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h1 class="display-3  mt-5 text-center" >Administrar productos</h1>
+            <hr>
+           <article class="bg-light">
+             <div>
+             <h3 class="p-3">Cargar productos</h3>
+             
+            </div>
+                <form class="p-3">
+                    <div class="mb-3">
+                      <label for="codigo" class="form-label">Codigo </label>
+                      <input type="text" class="form-control" id="codigo" placeholder="Ingrese el codigo del producto" >
+                     
+                    
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="producto" class="form-label">Producto</label>
+                      <input type="text" class="form-control" id="producto" placeholder="Ingrese el producto">
+                     
+                    
+                    </div>
+                    <div class="mb-3">
+                      <label for="descripcion " class="form-label">Descripcion</label>
+                      <textarea type="text" class="form-control" id="descripcion " rows="3" placeholder="Ingrese la descripcion del producto"></textarea> 
+                    
+                    </div>
+                    <div class="mb-3">
+                        <label for="Cantidad" class="form-label">Cantidad</label>
+                        <input type="number" class="form-control" id="Cantidad" placeholder="Ingrese la Cantidad">
+                       
+                      </div>
+                    <div class="mb-3">
+                        <label for="imagen" class="form-label">Imagen</label>
+                        <input type="text" class="form-control" id="imagen" placeholder="Ingrese la imagen">
+                       
+                      </div>
+                      <button class="btn btn-primary" type="submit">Guardar</button>
+                    
+                  </form>
+                </article>
+                <article >
+                  <h2 class="display-3 text-center mt-5">Tabla de productos</h2>
+                  <hr>
+                  <div>
+                    <button class="btn btn-primary">Nuevos</button>
+                    <button class="btn btn-secondary">Cargar datos de prueba</button>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table  mt-5 ">
+                      <thead >
+                        <tr  >
+                          <th scope="col"class="text-center">Cod</th>
+                          <th scope="col"class="text-center">Productos</th>
+                          <th scope="col"class="text-center">Descripcion</th>
+                          <th scope="col" class="text-center">Cantidad</th>
+                          <th scope="col"class="text-center">URL</th>
+                          
+                          <th scope="col"class="text-center">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>765</th>
+                          <td> Harry Potter </td>
+                          <td>Funko Pop! Harry Pushing Trolley</td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td class="text-center" >
+                          <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>567</th>
+                          <td>Dwight: The office</td>
+                          <td>Funko Pop! TV: La Oficina - Dwight Schrute </td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td class="text-center" >
+                            <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>653</th>
+                          <td>Bruja Escarlata</td>
+                          <td>Funko Pop Marvel Figura coleccionable de vinilo de la bruja escarlata de WandaVision</td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td class="text-center">
+                          <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>078</th>
+                          <td>The Mandalorian</td>
+                          <td>Funko Pop! Star Wars: El mandaloriano - Mandalorian volando con el niño gris</td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td class="text-center">
+                            <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>190</th>
+                          <td>Daenerys Targaryen</td>
+                          <td>Figura de vinilo de Daenerys Targaryen de Games of Thrones de Funko POP </td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HXgfdgdfgdfgdfsgdgdgsg/</td>
+                          <td class="text-center" >
+                            <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th>467</th>
+                          <td>Stitch en cohete</td>
+                          <td>Funko Pop! Rides: Lilo & Stitch - Stitch in Rocket </td>
+                          <td>1</td>
+                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td class="text-center" >
+                            <button class="btn btn-success">Editar</button>
+                          <button class="btn btn-danger mt-2">Eliminar</button>
+                        </td>
+                        </tr>
+                       
+                        
+                        
+                      </tbody>
+                    </table>
+                  
+                  </div>
+                </article>
+        </section>
+        
     </main>
+    <footer></footer>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/admin.js"></script>
   
