@@ -40,10 +40,13 @@
              <h3 class="p-3">Cargar productos</h3>
              
             </div>
-                <form class="p-3">
+                <form class="p-3" id="formProducto">
                     <div class="mb-3">
                       <label for="codigo" class="form-label">Codigo </label>
                       <input type="text" class="form-control" id="codigo" placeholder="Ingrese el codigo del producto" >
+                      <div class="invalid-feedback">
+                        Debe agregar al menos un caracter
+                      </div>
                      
                     
                     </div>
@@ -61,17 +64,20 @@
                     </div>
                     <div class="mb-3">
                         <label for="Cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="Cantidad" placeholder="Ingrese la Cantidad">
+                        <input type="number" class="form-control" id="cantidad" placeholder="Ingrese la Cantidad">
                        
                       </div>
                     <div class="mb-3">
                         <label for="imagen" class="form-label">Imagen</label>
-                        <input type="text" class="form-control" id="imagen" placeholder="Ingrese la imagen">
+                        <input type="text" class="form-control" id="imagen" placeholder="Ingrese la url">
                        
                       </div>
                       <button class="btn btn-primary" type="submit">Guardar</button>
                     
                   </form>
+                  <div class="alert alert-danger my-3 d-none" id="mensajeAlerta" role="alert">
+                    Debe completar todos los datos
+                  </div>
                 </article>
                 <article >
                   <h2 class="display-3 text-center mt-5">Tabla de productos</h2>
@@ -99,7 +105,7 @@
                           <td> Harry Potter </td>
                           <td>Funko Pop! Harry Pushing Trolley</td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td>https://www.amazon.com.au/FUNKO-POP-Deluxe-Anniversary-Pushing</td>
                           <td class="text-center" >
                           <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
@@ -110,7 +116,11 @@
                           <td>Dwight: The office</td>
                           <td>Funko Pop! TV: La Oficina - Dwight Schrute </td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td  >
+                            <p class=" text-truncate">
+                            
+                        https://www.amazon.com.au/FUNKO-POP-Television-Office-Schrute</p>
+                     </td>
                           <td class="text-center" >
                             <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
@@ -121,7 +131,10 @@
                           <td>Bruja Escarlata</td>
                           <td>Funko Pop Marvel Figura coleccionable de vinilo de la bruja escarlata de WandaVision</td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td >
+                            <p class="text-truncate">
+                            https://www.amazon.com.au/FUNKO-POP-Marvel-WandaVision-Scarlet
+                          </p></td>
                           <td class="text-center">
                           <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
@@ -132,7 +145,11 @@
                           <td>The Mandalorian</td>
                           <td>Funko Pop! Star Wars: El mandaloriano - Mandalorian volando con el niño gris</td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td >
+                            <p class=" d-inline-block text-truncate" >
+                            
+                            https://www.amazon.com.au/FUNKO-POP-Star-Wars-Mandalorian/
+                          </p></td>
                           <td class="text-center">
                             <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
@@ -143,7 +160,7 @@
                           <td>Daenerys Targaryen</td>
                           <td>Figura de vinilo de Daenerys Targaryen de Games of Thrones de Funko POP </td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HXgfdgdfgdfgdfsgdgdgsg/</td>
+                          <td>https://www.amazon.com.au/FUNKO-POP-TELEVISION-Daenerys-Targarye</td>
                           <td class="text-center" >
                             <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
@@ -154,7 +171,7 @@
                           <td>Stitch en cohete</td>
                           <td>Funko Pop! Rides: Lilo & Stitch - Stitch in Rocket </td>
                           <td>1</td>
-                          <td>www.amazon.com/-/es/Funko-Pop-TV-Oficina-Schrute/dp/B07NSPN4HX/</td>
+                          <td>https://www.amazon.com.au/FUNKO-POP-Rides-Stitch-Stitch/</td>
                           <td class="text-center" >
                             <button class="btn btn-success">Editar</button>
                           <button class="btn btn-danger mt-2">Eliminar</button>
