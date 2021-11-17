@@ -10,7 +10,7 @@ let campoCantidad = document.getElementById('cantidad');
 let campoURL= document.getElementById('imagen');
 let formularioProducto = document.getElementById('formProducto')
 // lista de productos
-let listaProductos =[];
+let listaProductos = JSON.parse(localStorage.getItem('listaProductosKey')) || [];
 
 // para agrrgar eventos en js se llaman: addEventListener
 // desde js, no lleva la palabra 'on' adelante como si lo hace en html
@@ -42,6 +42,14 @@ formularioProducto.addEventListener('submit',guardarProducto);
     console.log(listaProductos);
     // limpiar el formulario una vez agregado al arreglo
     limpiarFormulario();
+    // guardar en localstorage el arreglo de productos
+    guardarLocalstorage();
+    // mostrar un mensaje al usuario
+    Swal.fire(
+        'Producto creado!',
+        'Yay! Tu producto fue creado correctamente ',
+        'success'
+      )
 
 
 
@@ -58,7 +66,9 @@ formularioProducto.addEventListener('submit',guardarProducto);
     campoURL.className = 'form-control'
 
  }
- 
+ function guardarLocalstorage(){
+     localStorage.setItem('listaProductosKey', JSON.stringify(listaProductos));
+ }
  // expresiones regulares: crean una especie de patron o estructura, para estandarizar devuelve datos boleanos si se cumplen o no
  
  // por ejemplo para validar q sea numerico y tenga un max-lenght de 3 caracteres
