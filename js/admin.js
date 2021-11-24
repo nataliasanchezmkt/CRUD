@@ -21,6 +21,9 @@ campoCantidad.addEventListener('blur', ()=>{validarNumeros(campoCantidad)});
 campoURL.addEventListener('blur', ()=>{validarURL(campoURL)});
 formularioProducto.addEventListener('submit',guardarProducto);
 
+// llamar ala funcion cargaInicial
+cargaInicial();
+
  function guardarProducto(e){
      e.preventDefault()
     //  valdiar que todos los campos esten correctos
@@ -50,6 +53,9 @@ formularioProducto.addEventListener('submit',guardarProducto);
         'Yay! Tu producto fue creado correctamente ',
         'success'
       )
+    //   creo una nueva fila en la tabla
+
+    crearFila(productoNuevo);
 
 
 
@@ -72,3 +78,38 @@ formularioProducto.addEventListener('submit',guardarProducto);
  // expresiones regulares: crean una especie de patron o estructura, para estandarizar devuelve datos boleanos si se cumplen o no
  
  // por ejemplo para validar q sea numerico y tenga un max-lenght de 3 caracteres
+
+
+ function crearFila(producto){
+     let tabla = document.getElementById('tablaProductos');
+     tabla.innerHTML += `<tr>
+     <th>${producto.code}</th>
+     <td> ${producto.product} </td>
+     <td>${producto.description}</td>
+     <td>${producto.amount}</td>
+     <td>${producto.url}</td>
+     <td class="text-center" >
+     <button class="btn btn-success">Editar</button>
+     <button class="btn btn-danger mt-2">Eliminar</button>
+   </td>
+   </tr>`
+
+
+
+ }
+
+ function cargaInicial(){
+    //  si hay datos en local storage o en lista productos : dijulo las filas
+
+    if(listaProductos.length>0){
+        // dibujar fila
+       listaProductos.forEach((itemProducto) => {crearFila(itemProducto)});
+    }
+
+ }
+
+
+ function borrarTabla(){
+     let tabla = document.getElementById('tablaProductos');
+     tabla.innerHTML = '';
+ }
