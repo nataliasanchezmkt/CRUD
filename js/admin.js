@@ -188,10 +188,11 @@ borrarTabla();
 listaProductos.forEach((itemProducto) => {crearFila(itemProducto)});
 
 // mostrar mensaje al usuario
-
-
-
-  
+Swal.fire(
+  'Producto eliminado.',
+  ' Tu producto fue eliminado correctamente ',
+  'success'
+)
 }
 
 
