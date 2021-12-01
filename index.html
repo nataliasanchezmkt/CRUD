@@ -1,116 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- agregar etiquetas meta -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>CRUD</title>
-</head>
-<body >
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html" id="logo">Practica CRUD</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  aria-current="page" href="admin.html">Administracion</a>
-                        </li>
-                        
-                    </ul>
-                    
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html" id="logo">Practica CRUD</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="admin.html"
+                  >Administracion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main >
-        <section   >
-            <article>
-                <h1 class="display-3  text-center mt-4 py-4 ">Catalogo de productos</h1>
-                <hr>
-               
-            </article>
-            <article  class="container" >
-              
-            <div class="row" data-masonry='{"percentPosition": true }'>
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3 ">
-                <div class="card " >
-                    <img src="/img/dwight.jpg" class="card-img-top" alt="funkopop de Harry Potter ">
-                    <div class="card-body bg-light">
-                     <h5 class="card-title "> Dwight Schrute</h5>
-                      <p class="card-text">Funko Pop de Dwight Schrute de la serie de TV: The office</p>
-                      
-
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-                <div class="card  " >
-                    <img src="/img/harryPotterPushing.jpg" class="card-img-top" alt="funkopop de Dwight">
-                    <div class="card-body bg-light">
-                        <h5 class="card-title">Harry Potter </h5>
-                      <p class="card-text">Figura de vinilo de  Harry empujando el Trolley </p>
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-                <div class="card " >
-                    <img src="/img/brujaEscarlata.jpg" class="card-img-top" alt="funkopop de la bruja">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">La bruja Escarlata</h5>
-                      <p class="card-text">Figura de vinilo Marvel Figura de la bruja escarlata de WandaVision</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-                <div class="card " >
-                    <img src="/img/mandalorian.jpg" class="card-img-top" alt="funkopop de StarWars, mandalorian">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">Madalorian con baby Yoda</h5>
-                      <p class="card-text">Figura de vinilo Star Wars: El mandaloriano - Mandalorian volando con baby Yoda</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-                <div class="card " >
-                    <img src="/img/stitch.jpg" class="card-img-top" alt="funkopop de Stitch">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">Stitch en cohete</h5>
-                      <p class="card-text">Figura de vinilo de Stitch ,de la pelicula de Disney, en un cohete espacial</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
-                <div class="card " >
-                    <img src="/img/khaleesi.jpg" class="card-img-top" alt="funkopop khaleesi">
-                    <div class="card-body bg-light">
-                      <h5 class="card-title">Khaleesi</h5>
-                      <p class="card-text"> Figura de vinilo de Daenerys Targaryen de Games of Thrones de Funko POP</p>
-                    </div>
-                  </div>
-                </div>
-            </article>
-        </section>
-
+    <main>
+      <section class="container">
+        <article>
+          <h1 class="display-3 text-center mt-4 py-4">Catalogo de productos</h1>
+          <hr />
+        </article>
+        <article class=" row" id="grillaPrincipal"  data-masonry='{"percentPosition": true }'>
+          
+       
+        </article>
+      </section>
     </main>
-
-        
-
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  
-    
-    <script src="js/bootstrap.min.js"></script>
-
-  
-</body>
+    <script src="js/app.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  </body>
 </html>
