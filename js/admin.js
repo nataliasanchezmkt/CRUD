@@ -1,15 +1,16 @@
 import {campoRequerido, validarNumeros, validarURL, validarGeneral} from './helpers.js'
 import {Producto} from './classProducto.js'
 
-// agregar validaciones a los elementos del form desde js y no  desde html, ya que podria ser vulnerado
-
+// traemos todos los imput
 let campoCodigo = document.getElementById('codigo');
 let campoProducto = document.getElementById('producto');
 let campoDescripcion = document.getElementById('descripcion ');
 let campoCantidad = document.getElementById('cantidad');
 let campoURL= document.getElementById('imagen');
 let formularioProducto = document.getElementById('formProducto')
-// lista de productos
+
+
+// creamos el arreglo de productos para manipular el localStorage
 let listaProductos = JSON.parse(localStorage.getItem('listaProductosKey')) || [];
 let productoExistente =  false; //si productoExistente = false : nuevo producto . si producto existente=true : llamo a modificarProducto
 let btnAgregar= document.getElementById('btnAgregar');
@@ -86,9 +87,7 @@ cargaInicial();
  function guardarLocalstorage(){
      localStorage.setItem('listaProductosKey', JSON.stringify(listaProductos));
  }
- // expresiones regulares: crean una especie de patron o estructura, para estandarizar devuelve datos boleanos si se cumplen o no
  
- // por ejemplo para validar q sea numerico y tenga un max-lenght de 3 caracteres
 
 
  function crearFila(producto){

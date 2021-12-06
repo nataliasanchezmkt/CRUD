@@ -1,4 +1,6 @@
 // aca se guardan las validaciones de formularios
+// agregar validaciones a los elementos del form desde js y no  desde html, ya que podria ser vulnerado
+
 
 export function campoRequerido(input){
 
@@ -12,6 +14,11 @@ export function campoRequerido(input){
 return false;}
 }
 
+
+// expresiones regulares: crean una especie de patron o estructura, para estandarizar devuelve datos boleanos si se cumplen o no
+ 
+ // por ejemplo para validar q sea numerico y tenga un max-lenght de 3 caracteres
+ 
 export function validarNumeros (input){
     // crear un expresion regular
     let patron = /^[0-9]{1,3}$/
